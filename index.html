@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              black: "#131313",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation Area -->
+      <nav class="bg-white h-20 fixed top-0 left-0 right-0">
+        <div
+          class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas px-5"
+        >
+          <h2 class="text-4xl">Sakib Production</h2>
+          <ul class="flex text-lg gap-8">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Banner Area -->
+      <section class="h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover">
+        <div class="h-full w-full max-w-7xl mx-auto p-5 flex items-center">
+          <div class="font-bebas text-white">
+            <h3 class="text-xl">Movie production studio</h3>
+            <h1 class="text-7xl">Films MAde to</h1>
+            <h1 class="text-7xl text-yellow">Perfection</h1>
+            <p class="font-montserrat max-w-lg mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <button
+              class="border-2 border-white py-2 px-3 hover:bg-yellow hover:border-yellow hover:text-black transition-all"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- About Us -->
+      <section class="py-40">
+        <div class="border-2 border-black w-full max-w-7xl mx-auto p-5">
+          <div class="lg:flex lg:items-center p-5 gap-5">
+            <div
+              class="w-full lg:w-1/2 h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover bg-center"
+            ></div>
+            <div class="w-full lg:w-1/2 font-bebas">
+              <h2>ABOUT US</h2>
+              <h1 class="text-7xl">FIlming Experience</h1>
+              <h1 class="text-7xl">Just Got better</h1>
+              <p class="font-montserrat mb-8">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                neque consequatur deserunt itaque quis ut, fuga, minima
+                recusandae quos rerum ipsam illo inventore pariatur quasi dicta
+                eum, alias totam optio!
+              </p>
+              <button
+                class="border-2 border-black py-2 px-3 hover:bg-black hover:text-white transition-all"
+              >
+                Discover More
+              </button>
+            </div>
+          </div>
+          <!-- Our Mission Area -->
+          <div class="grid grid-cols-1 md:grid-cols-3 p-5 gap-5 mt-16">
+            <div>
+              <div class="bg-black h-1.5 w-full mb-3"></div>
+              <h2 class="text-6xl font-bebas">OUR VISIOn</h2>
+              <p class="text-base font-montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black h-1.5 w-full mb-3"></div>
+              <h2 class="text-6xl font-bebas">OUR VISIOn</h2>
+              <p class="text-base font-montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div>
+              <div class="bg-black h-1.5 w-full mb-3"></div>
+              <h2 class="text-6xl font-bebas">OUR VISIOn</h2>
+              <p class="text-base font-montserrat">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Movies Section -->
+      <section class="px-10 py-20 bg-gray">
+        <div class="font-bebas text-white">
+          <h2>Our Movies</h2>
+          <div class="flex justify-between">
+            <h1 class="text-7xl">Movie Collection</h1>
+            <button
+              class="border-2 border-white py-2 px-3 hover:bg-black hover:border-black hover:text-white transition-all"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+        <div class="mt-20 grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div class="border-4 border-white p-5 w-full">
+            <img src="images/inception.jpg" alt="" />
+          </div>
+          <div class="border-4 border-white p-5 w-full">
+            <img src="images/inception.jpg" alt="" />
+          </div>
+          <div class="border-4 border-white p-5 w-full">
+            <img src="images/inception.jpg" alt="" />
+          </div>
+          <div class="border-4 border-white p-5 w-full">
+            <img src="images/inception.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- What We Offer Section -->
+      <section class="px-10 py-40">
+        <div class="font-bebas text-center">
+          <h2>Service</h2>
+          <h1 class="text-7xl">What We Offer</h1>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-20">
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+          <div class="border-2 border-black p-3 text-center">
+            <img class="mx-auto" src="images/icons/camera.png" alt="" />
+            <h2 class="font-bebas text-xl my-4">Movie Direction</h2>
+            <p class="font-montserrat">
+              Ex quam platea aliquet viverra si dictumst lobortis quis aliquam
+              dis eget.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Area -->
+    <footer class="pt-20 bg-[url('./images/footer-bg.jpg')] bg-cover">
+      <div
+        class="h-full w-full max-w-7xl mx-auto font-bebas text-white text-center"
+      >
+        <h1 class="text-7xl">Sakib Production</h1>
+        <h2 class="text-2xl my-4">next level experience</h2>
+        <p class="font-montserrat">
+          Feugiat nibh litora semper proin nullam facilisi volutpat ex
+          ullamcorper.
+        </p>
+      </div>
+      <p class="font-montserrat mt-16 pb-5 text-center text-white">
+        Copyright © 2021 Sakib Production, All rights reserved. Developed By
+        Sakib Mahbub
+      </p>
+    </footer>
+  </body>
+</html>
